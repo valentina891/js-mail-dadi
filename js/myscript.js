@@ -28,6 +28,7 @@
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
+
 var giocatoreRandom = Math.floor(Math.random()*6) + 1;
 console.log(giocatoreRandom);
 
@@ -39,15 +40,15 @@ var pareggio;
 
 if (giocatoreRandom > pcRandom) {
     vincitore = giocatoreRandom;
-    document.getElementById('numero-vincitore').innerHTML = "il numero con il punteggio più alto è " + vincitore;
+    document.getElementById('numero-vincitore').innerHTML = "Giocatore ha vinto. Il numero con il punteggio più alto è " + vincitore;
 
 }
 else if (pcRandom > giocatoreRandom) {
     vincitore = pcRandom;
-    document.getElementById('numero-vincitore').innerHTML = "il numero con il punteggio più alto è " + vincitore;
+    document.getElementById('numero-vincitore').innerHTML = "PC ha vinto. Il numero con il punteggio più alto è " + vincitore;
 
 }
 else {
     pareggio = giocatoreRandom == pcRandom;
-    document.getElementById('numero-uguale').innerHTML = "i numeri sono uguali";
+    document.getElementById('numero-uguale').innerHTML = "Pareggio";
 }
